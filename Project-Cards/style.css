@@ -1,0 +1,215 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mooli', sans-serif;
+}
+
+body {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+
+#check {
+    display: none;
+}
+
+.mainmenu {
+    margin-top: 20px;
+    height: 200vh;
+    width: 270px;
+    background-color: rgb(111, 114, 117, 0.025);
+    position: fixed;
+    left: -886px;
+    margin-top: -20px;
+    border-radius: 8px;
+    background: transparent
+}
+
+.mainmenu .name a {
+    margin-top: -5px;
+    left: 50px;
+    top: 15px;
+    bottom: 5px;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu {
+    position: fixed;
+    top: 50px;
+    left: -655px;
+    background-color: rgb(111, 114, 117, 0.025);
+    margin-top: 10px;
+}
+
+.menu li {
+    color: whitesmoke;
+    height: 50px;
+    width: 240px;
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-top: 2px;
+}
+
+.menu li span {
+    font-size: 30px;
+    font-weight: 130;
+    color: white;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.cross {
+    z-index: 2;
+
+    position: fixed;
+    top: 10px;
+    left: 245px;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.dot {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 30px;
+    z-index: 2;
+    font-size: 50px;
+    size: 1.5em;
+}
+
+.mainmenu:hover {
+    box-shadow: 0px 0px 2px white;
+    transition: 0.20s;
+}
+
+.mainmenu li:hover {
+    box-shadow: 0px 0px 0.50px white;
+    transition: 0.50s;
+    font-size: 30px;
+}
+
+.menu li a:hover {
+    font-size: 30px;
+    transition: 1s;
+}
+
+
+
+.cross span:hover {
+    font-size: 1.1em;
+    font-weight: 1.1em;
+    color: rgb(175, 236, 45);
+    transition: 1s;
+}
+
+.dot span:hover {
+    font-size: 1.1em;
+    font-weight: 1.1em;
+    color: rgb(166, 223, 42);
+    transition: 1s;
+}
+
+
+#check:checked~.mainmenu .menu {
+    left: 30px;
+    transition: ease-in;
+    transition-duration: 1s;
+}
+
+#check:checked~.mainmenu {
+    left: 0px;
+    transition: ease-out;
+    transition-duration: 0.60s;
+}
+
+#check:checked~.dot {
+    opacity: 0;
+}
+
+#check:checked~.cross {
+    opacity: 1;
+}
+
+
+
+#card2,
+#card1 {
+    height: 460px;
+    width: 400px;
+    display: inline-block;
+    border: 2px solid white;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 6px;
+    margin-left: 250px;
+    margin-top: 50px;
+    /* text-align: center;
+    justify-content: center; */
+    color: white;
+}
+
+img {
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+}
+
+#card1:hover,
+#card2:hover {
+    box-shadow: 0px 20px 20px aqua; cursor: pointer;
+}
+
+.dec {
+    padding: 0px 0px 20px 20px;
+}
+
+h1 {
+    justify-content: center;
+    font-size: 60px;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    text-decoration: bold;
+    font-weight: 500px;
+    margin: 30px 0px 10px 20px;
+
+    color: white;
+    animation: slidex 1s ease-in;
+    opacity: 1;
+}
+
+h1 span {
+    color: aqua;
+}
+
+.desi {
+    display: inline-block;
+    line-height: 1.0em;
+    color: aqua;
+}
+
+#para {
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    line-height: 0.8em;
+    margin-top:-10px;
+}
+
+@keyframes slidex {0%{opacity: 0;} to
+    100%{opacity: 1;}}
+    
